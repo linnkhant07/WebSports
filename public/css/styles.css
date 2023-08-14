@@ -1,0 +1,47 @@
+body{
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #1f1b29;
+}
+
+.main{
+    /* border: 1px solid red; */
+    margin-bottom: 150px;
+
+} 
+
+h1{
+    color: #ffa260;
+    margin-bottom: 60px;
+}
+
+.main a{
+    display: block;
+    width: 200px;
+    height: 50px;
+    margin: 20px auto;
+    background: #ffa260;
+    color: #000;
+    border: 2px solid #ffa260;
+    padding: 1em 2em;
+    font-size: 1em; 
+    transition: border-color 0.25s, color 0.25s, box-shadow 0.25s, transform 0.25s;
+    cursor: pointer;
+}
+
+.main a:hover{
+    border-color: #ffa260;
+    color: white;
+    box-shadow: 0px 0.53em 0.9em -0.4em  #ffa260;
+    transform: translateY(-0.25em);
+    
+}
+
+.main a:active{
+    transform: translate(0.25em);
+    color: white;
+}
+
