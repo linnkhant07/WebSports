@@ -1,0 +1,106 @@
+body{
+    background: #1f1b29;
+}
+
+#mainNavBar {
+    background-color: #1f1b29;
+    height: 65px;
+    text-shadow: 0 0.05rem 0.1rem rgba(0, 0, 0, 0.5);
+    /* #06AED5  #086788*/
+}
+
+#mainNavBar a{
+    color: white;
+    font-size: 1.2rem;
+}
+
+#mainNavBar .navbar-brand{
+    color: #ffa260;
+}
+
+.flash{
+    margin-top: 70px;
+    margin-bottom: 10px;
+}
+
+.categories{
+    color: white;
+    margin-top: 40px;
+    text-align: center;
+}
+
+.categories img{
+    width: 100%;
+    height: 20vw;
+    object-fit: cover;
+}
+
+
+.about {
+    color: white;
+    /* height: 450px; */
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.about h3{
+    margin-bottom: 40px;
+}
+
+.about-text {
+    text-align: center;
+    width: 70%;
+    margin: 0 auto;
+    padding: 20px;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+footer{
+    color: white;
+    margin-top: 40px;
+    height: 50vh;
+}
+
+footer h2{
+    text-align: center;
+}
+
+#email{
+    padding-left: 5px;
+}
+textarea{
+    padding-left: 5px;
+}
+
+.social{
+    padding-left: 60px;
+    padding-top: 25px;
+}
+
+svg{
+    margin-right: 10px;
+}
+
+.social-item{
+    display: block;
+    margin-bottom: 25px;
+}
+
+.btn{
+    padding: 10px;
+}
+
+#btnSend{
+    color: #1f1b29;
+    background-color: #ffa260;
+}
+
+#btnSend:hover{
+    border-color: #ffa260;
+    color: white;
+    box-shadow: 0px 0.53em 0.9em -0.4em  #ffa260;
+    
+}
+
+

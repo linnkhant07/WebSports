@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/register.css">
+    <title>Register</title>
+</head>
+<body>
+    <%- include('../partials/success')  %> 
+    <div class="container form">
+        <h1>Create a New Account</h1>
+        <form action="/user/register" method="POST">
+            <div class="row mb-3 g-3">
+                <div class="col-sm-6">
+                    <label for="firstname" class="form-label">First Name</label>
+                    <input type="text" class="form-control" id="firstname" name="user[firstname]" placeholder="John">
+                </div>
+                <div class="col-sm-6">
+                    <label for="lastname" class="form-label">Last Name</label>
+                    <input type="text" class="form-control" id="lastname" name="user[lastname]" placeholder="Doe">
+                </div>
+            </div>
+            <div class="row mb-3 g-3">
+                <div class=" col-sm-6">
+                    <label for="uname" class="form-label">Username</label>
+                    <input type="text" class="form-control" id="username" name="user[username]" placeholder="Username">
+                    <div class="form-text">
+                        Example: johnnydoe23
+                    </div>
+
+                </div>
+                <div class=" col-sm-6">
+                    <label for="password" class="form-label">Password</label>
+                    <input type="password" class="form-control" id="password" name="user[password]" placeholder="Password" minlength="8" maxlength="20">
+                    <div class="form-text">
+                        Must be 8-20 characters long.
+                    </div>
+                </div>
+            </div>
+            <div class="mb-3">
+            <div class="row mb-3 g-3">
+                <div class="col-md-4 col-sm-6">
+                    <label for="bd" class="form-label">Birthday</label><br>
+                    <input type="date" class="form-control" name="user[birthday]" id="bd">
+                    <div class="form-text">
+                        Must be at least 9 years old.
+                    </div>
+                </div>
+                
+                <div class="col-md-4 col-sm-6 radiobox">
+                    <label for="" class="form-label">Gender</label><br>
+                    <div class="form-check gender">
+                        <input class="form-check-input" type="radio" name="user[gender]" id="male">
+                        <label class="form-check-label" for="male">
+                          Male
+                        </label>
+                    </div>
+                    <div class="form-check gender">
+                        <input class="form-check-input" type="radio" name="user[gender]" id="female">
+                        <label class="form-check-label" for="female">
+                          Female
+                        </label>
+                    </div>
+                </div>
+                
+                <div class="col-md-4 col-sm-6">
+                    <label for="email" class="form-label">email</label>
+                    <input type="email" class="form-control" id="email"  name="user[email]" placeholder="123 Main St, NY">
+                </div>
+
+            </div>               
+
+            <div class="form-check mb-3">
+                <input class="form-check-input" type="checkbox" name="tos" id="tos">
+                <label class="form-check-label" for="tos">
+                  I agree with the terms and conditions.
+                </label>
+            </div>
+            <button class="btn btn-dark" id="submitBtn">Submit</button>
+        </form>  
+    </div>
+    </div>
+    
+    <a class="btn btn-danger d-inline-block mt-4" href="/user/login" id="backBtn">&#8592; back</a>    
+    
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+</body>
+
+</html>
